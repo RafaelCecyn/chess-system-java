@@ -17,7 +17,7 @@ public abstract class Piece {
 	
 	public abstract boolean[][] possibleMoves();
 	
-	public boolean possibleMove(Position position) { // template method
+	public boolean possibleMoves(Position position) { // template method
 		return possibleMoves()[position.getRow()][position.getColumn()]; // método concreto usando o método abstrato
 	}
 	
