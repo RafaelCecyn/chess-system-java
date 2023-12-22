@@ -3,7 +3,8 @@ package chess;
 import boardgame.Board;
 import boardgame.Piece;
 
-public class ChessPiece extends Piece {
+public abstract class ChessPiece extends Piece {
+	// Classe abstrata herda uma classe abstrata não precisa implementar o método abstrato
 
 	private Color color;
 
