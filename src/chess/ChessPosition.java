@@ -30,7 +30,7 @@ public class ChessPosition {
 	}
 	
 	protected static ChessPosition fromPosition(Position position) {
-		return new ChessPosition((char)('a' - position.getColumn()), 8 - position.getRow()); // transforma a posição da matriz para o xadrez 00 to a8
+		return new ChessPosition((char)('a' + position.getColumn()), 8 - position.getRow()); // transforma a posição da matriz para o xadrez 00 to a8
 	}
 	
 	@Override
